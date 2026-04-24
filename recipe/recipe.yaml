@@ -1,14 +1,14 @@
 context:
   name: csp-bot-commands
-  version: "1.0.0"
+  version: "1.0.1"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-    url: https://pypi.org/packages/source/c/csp-bot-commands/csp_bot_commands-${{ version }}.tar.gz
-    sha256: ef9ac372ac30104b1cba8476aecef60868951de1eba1fea2ad4a264c20a67a76
+  url: https://pypi.org/packages/source/c/csp-bot-commands/csp_bot_commands-${{ version }}.tar.gz
+  sha256: c45c044e46afe90ce0c72ab6c831be36724e14712d3c3ef54c29b26bc5254c54
 
 build:
   number: 0
