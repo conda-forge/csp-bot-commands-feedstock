@@ -1,6 +1,7 @@
 context:
   name: csp-bot-commands
-  version: "1.0.1"
+  version: "2.0.0"
+  python_min: "3.11"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/csp-bot-commands/csp_bot_commands-${{ version }}.tar.gz
-  sha256: c45c044e46afe90ce0c72ab6c831be36724e14712d3c3ef54c29b26bc5254c54
+  sha256: 56a5119d5482ed11bd452dc4ba8696cd25f850ba045caefa20651ff74d71a06f
 
 build:
   number: 0
@@ -22,15 +23,17 @@ requirements:
     - hatchling
   run:
     - python >=${{ python_min }}
-    - csp-bot >=1,<2
+    - chatom >=0.2.0
+    - csp-bot >=2,<3
 
 tests:
   - python:
       imports:
         - csp_bot_commands
       pip_check: true
-      python_version: ${{ python_min }}.*
-
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 about:
   license: Apache-2.0
   license_file: LICENSE
