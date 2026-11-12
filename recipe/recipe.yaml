@@ -1,6 +1,6 @@
 context:
   name: csp-bot-commands
-  version: "2.0.2"
+  version: "2.0.3"
   python_min: "3.11"
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/csp-bot-commands/csp_bot_commands-${{ version }}.tar.gz
-  sha256: 3b765e1df6cef703c790f90089c53e54fde02b02901ab843ace24c4b7ab1461c
+  sha256: 50ec92130c13cdde77859345f28f9cc2478641efd24a54b9117f73531e8fa181
 
 build:
   number: 0
