@@ -1,7 +1,6 @@
 context:
   name: csp-bot-commands
   version: "2.1.0"
-  python_min: "3.11"
 
 package:
   name: ${{ name|lower }}
@@ -23,7 +22,7 @@ requirements:
     - hatchling
   run:
     - python >=${{ python_min }}
-    - chatom >=0.2.0
+    - chatom >=0.2.3
     - csp-bot >=2,<3
 
 tests:
